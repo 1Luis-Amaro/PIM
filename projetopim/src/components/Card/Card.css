@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 91.2vh;
+}
+
+.card{
+    text-align: center;
+    width: 90.5rem;
+    
+}
