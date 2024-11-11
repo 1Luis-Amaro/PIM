@@ -8,5 +8,9 @@
 .card{
     text-align: center;
     width: 90.5rem;
+    height: 36.6rem;
+    background-color: rgba(160, 157, 157, 0.596);
+    border-radius:  0px;
+
     
 }

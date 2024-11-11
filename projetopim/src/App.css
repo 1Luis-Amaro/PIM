@@ -6,7 +6,6 @@
     background-size: cover;     /* Garante que a imagem cubra toda a área do fundo */
     background-position: center; /* Centraliza a imagem no fundo */
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-color: rgba(241, 241, 241, 0.068);
 
 }
 
