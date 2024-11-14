@@ -1,0 +1,50 @@
+/* Centraliza o contêiner principal */
+.landing-page {
+  display: flex;
+  flex-direction: column; /* Mantém os elementos em uma coluna */
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  min-height: 100vh;      /* Garante que o contêiner ocupe a altura total da viewport */
+  text-align: center;     /* Centraliza o texto */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Exemplo de estilos para seções */
+.hero-section, .benefits-section, .features-section, .data-section, .dashboard-section, .cta-footer {
+  margin: 10%; /* Adiciona espaço entre as seções */
+  max-width: 800px; /* Limita a largura das seções */
+  width: 100%; /* Permite que cada seção ocupe 100% da largura do contêiner */
+}
+
+/* Botão Call to Action */
+.cta-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.imagem{
+  width: 15vw;
+  height: 30vh;
+  display: inline;
+  
+}
+
+.hero-section h1 {
+  font-weight:900;
+  font-size: 60px ;
+  padding-bottom: 50px;
+  font-weight: bold;
+  
+}
+
+.hero-section p, button {
+  font-size: 30px ;
+  font-weight: 600;
+  
+}

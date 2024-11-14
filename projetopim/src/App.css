@@ -1,14 +1,9 @@
-
 .App {
-    width: 100vw;               /* Garante que a largura ocupa 100% da viewport */
-    height: 100vh;              /* Garante que a altura ocupa 100% da viewport */
+    width: 100vw;                  /* Garante que a largura ocupa 100% da viewport */
+    min-height: 100vh;             /* Garante que a altura mínima é 100% do viewport */
     background-image: url('/src/assets/imagem.jpg'); /* Caminho relativo no projeto */
-    background-size: cover;     /* Garante que a imagem cubra toda a área do fundo */
-    background-position: center; /* Centraliza a imagem no fundo */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-
+    background-size: cover;        /* Garante que a imagem cubra toda a área do fundo */
+    background-position: center;   /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat;  /* Evita repetição da imagem */
+    background-attachment: fixed;  /* Faz com que o fundo permaneça fixo na rolagem */
 }
-
-
-  
-

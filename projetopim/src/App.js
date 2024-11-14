@@ -4,15 +4,21 @@ import ImagemFundo from './components/Imagem/ImagemFundo'; // Importando o compo
 import Nav from './components/Nav/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Certifique-se de importar o CSS do Bootstrap
 import Card from './components/Card/Card';
-
+import LandingPage from './components/LandingPage/LandingPage';
+import {BrowserRouter} from 'react'
 
 function App() {
   return (
+    
+    
     <div className="App">
       <Nav/>
-      <Card/>
+      <LandingPage/>
+      
+      
 
     </div>
+   
   );
 }
 
