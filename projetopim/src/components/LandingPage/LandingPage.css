@@ -20,25 +20,25 @@
   box-sizing: border-box;
 }
 
-.hero-section, .sobre-section, .features-section, .data-section, .dashboard-section, .cta-footer {
+.primeira-section, .sobre-section, .funcionalidades-section, .db-section, .dashboard-section, .button-footer {
   margin: 20%;
   max-width: 800px;
   width: 100%;
 }
 
 /* Hero Section */
-.hero-section h1 {
+.primeira-section h1 {
   font-weight: 900;
   font-size: 60px;
   padding-bottom: 50px;
 }
 
-.hero-section p, .cta-button {
+.primeira-section p, .demons-button {
   font-size: 30px;
   font-weight: 600;
 }
 
-.cta-button {
+.demons-button {
   padding: 12px 24px;
   background-color: #007bff;
   border: none;
@@ -58,7 +58,7 @@
   font-weight: 900;
 }
 
-.sobre-content {
+.sobre-software {
   max-width: 800px;
   margin: 0 auto;
   
@@ -91,33 +91,33 @@
   
 }
 
-.features-section h2, .sobre-content h2, .data-section h2, .dashboard-section h2, .cta-footer h2 {
+.funcionalidades-section h2, .sobre-software h2, .db-section h2, .dashboard-section h2, .button-footer h2 {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 30px;
 }
 
-.features-section .feature {
+.funcionalidades-section .todas-funcionalidades {
   margin-bottom: 20px;
 }
 
 /* Estilos das funcionalidades */
-.feature h3 {
+.todas-funcionalidades h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.feature p {
+.todas-funcionalidades p {
   font-size: 16px;
   font-weight: 400;
 }
 
-.features-section {
+.funcionalidades-section {
   background-color: #333;
   padding: 40px 0;
 }
 
-.data-section {
+.db-section {
   background-color: #444;
   padding: 40px 0;
 }
@@ -127,13 +127,13 @@
   padding: 40px 0;
 }
 
-.cta-footer {
+.button-footer {
   background-color: #7391b1;
   padding: 40px 0;
 }
 
 /* Estilo dos botões */
-.cta-button {
+.demons-button {
   padding: 12px 24px;
   background-color: #7391b1;
   border: none;
@@ -142,7 +142,7 @@
   margin-top: 20px;
 }
 
-.cta-footer .cta-button {
+.button-footer .demons-button {
   background-color: #0fad34;
 }
 
@@ -158,12 +158,15 @@
 
 /* Adiciona um espaçamento superior no conteúdo para não sobrepor a navbar */
 .landing-page {
-  padding-top: 80px; /* Ajuste conforme a altura da sua navbar */
+  padding-top: 100px; /* Ajuste conforme a altura da sua navbar */
 }
 
 /* Seções */
-.hero-section, .features-section, .data-section, .dashboard-section, .cta-footer {
+.primeira-section, .funcionalidades-section, .db-section, .dashboard-section, .button-footer {
   margin-top: 20px; /* Ajuste se necessário para dar mais espaçamento entre a navbar e o conteúdo */
 }
 
+#sobre, #funcionalidades {
+  scroll-margin-top: 90px; /* Ajuste conforme a altura da navbar */
+}
 

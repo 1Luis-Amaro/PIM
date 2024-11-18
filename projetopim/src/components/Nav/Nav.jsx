@@ -11,16 +11,16 @@ export default function Nav() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
+                        <a className="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Sobre</a>
+                        <a className="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Serviços</a>
+                        <a className="nav-link" href="#funcionalidades">Serviços</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contato</a>
+                        <a className="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
                 <form className="d-flex">

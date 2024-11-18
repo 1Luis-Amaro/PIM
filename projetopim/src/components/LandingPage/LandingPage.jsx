@@ -6,18 +6,18 @@ export default function LandingPage() {
  
 
   return (
-    <div className="landing-page">
+    <div id="home" className="landing-page">
 
       {/* Hero Section */}
-      <header id="home" className="hero-section">
+      <header  className="primeira-section">
         <h1 className="scroll-effect">Impulsione sua Gestão com Nosso Software</h1>
         <p className="scroll-effect">Otimize processos, reduza custos e melhore a tomada de decisões com uma plataforma integrada de gestão.</p>
-        <button className="cta-button scroll-effect">Solicite uma Demonstração</button>
+        <button className="demons-button scroll-effect">Solicite uma Demonstração</button>
       </header>
 
      {/**parte do sobre */} 
-      <section className="sobre-section">
-      <div className="sobre-content">
+      <section id='sobre' className="sobre-section">
+      <div className="sobre-software">
         <h2 className="scroll-effect">Sobre o Software</h2>
         <p className="scroll-effect">
           Nosso software foi desenvolvido com o objetivo de promover e impulsionar a gestão de empresas, garantindo uma melhoria significativa na otimização dos processos, redução de custos, aumento da produtividade e melhoria na tomada de decisões através de dados em tempo real.
@@ -40,22 +40,22 @@ export default function LandingPage() {
     </section>
 
       {/* Funcionalidades */}
-      <section id="sobre" className="features-section">
+      <section id="funcionalidades" className="funcionalidades-section">
         <h2 className="scroll-effect boxfuncionalidades funcionalidades">Funcionalidades Principais</h2>
-        <div className="features">
-          <div className="feature">
+        <div className="todas-funcionalidades">
+          <div className="mais-funcionalidades">
             <h3 className="scroll-effect abaixoDeFuncionalidades">Monitoramento e Registro de Vendas</h3>
             <p className="scroll-effect">Rastreie e analise as vendas em tempo real.</p>
           </div>
-          <div className="feature">
+          <div className="mais-funcionalidades">
             <h3 className="scroll-effect abaixoDeFuncionalidades">Cadastro de Novos Produtos</h3>
             <p className="scroll-effect abaixoDeFuncionalidades">Adicione novos tipos de alimentos e controle o estoque com facilidade.</p>
           </div>
-          <div className="feature">
+          <div className="mais-funcionalidades">
             <h3 className="scroll-effect abaixoDeFuncionalidades">Gestão de Usuários</h3>
             <p className="scroll-effect abaixoDeFuncionalidades">Gerencie e cadastre usuários para um controle completo.</p>
           </div>
-          <div className="feature">
+          <div className="mais-funcionalidades">
             <h3 className="scroll-effect abaixoDeFuncionalidades">Monitoramento de Clientes</h3>
             <p className="scroll-effect ">Observe e gerencie o relacionamento com os clientes.</p>
           </div>
@@ -63,21 +63,21 @@ export default function LandingPage() {
       </section>
 
       {/* Integração e Armazenamento de Dados */}
-      <section id="servicos" className="data-section">
+      <section  className="db-section">
         <h2 className="scroll-effect">Integração e Armazenamento Seguro</h2>
         <p className="scroll-effect">Nosso sistema é totalmente integrado ao banco de dados, armazenando e protegendo todas as informações.</p>
       </section>
 
       {/* Dashboard e Análise */}
-      <section id="contato" className="dashboard-section">
+      <section className="dashboard-section">
         <h2 className="scroll-effect">Dashboard Analítico</h2>
         <p className="scroll-effect">Acompanhe lucros diários e mensais, total de clientes, usuários e muito mais em nosso dashboard interativo.</p>
       </section>
 
       {/* Call to Action */}
-      <footer className="cta-footer">
+      <footer className="button-footer">
         <h2 className="scroll-effect">Pronto para Transformar sua Gestão?</h2>
-        <button className="cta-button scroll-effect">Comece Agora</button>
+        <button className="demons-button scroll-effect">Comece Agora</button>
       </footer>
     </div>
   );

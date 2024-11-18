@@ -8,7 +8,7 @@ import { CiTwitter } from "react-icons/ci";
 export default function Footer() {
     
   return (
-    <footer className="footer " >
+    <footer id='contato' className="footer " >
       <div className="footer-content scroll-effect">
         <div className="footer-logo ">
           <h2>MinhaEmpresa</h2>
