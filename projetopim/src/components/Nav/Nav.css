@@ -1,0 +1,58 @@
+/* Navbar fixa no topo */
+.navbar {
+  position: fixed; /* Fixa a navbar no topo da página */
+  top: 0;          /* Posiciona no topo */
+  left: 0;         /* Alinha à esquerda */
+  width: 100%;     /* Faz a navbar ocupar toda a largura */
+  z-index: 999;    /* Garante que a navbar fique acima de outros elementos */
+  background-color: #343a40; /* Cor escura para a navbar */
+  padding: 10px 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
+  cursor: pointer;
+}
+
+/* Torna o cursor uma seta ao passar sobre os links da navbar */
+.navbar-nav .nav-item .nav-link {
+  cursor: pointer;
+}
+
+.navbar-brand {
+  cursor: pointer;  /* Também aplica o cursor de seta no nome da marca */
+}
+
+/* Ajuste para garantir que o conteúdo não sobreponha a navbar */
+.landing-page {
+  padding-top: 80px; /* Ajuste conforme a altura da sua navbar */
+}
+
+/* Ajuste o posicionamento do formulário de pesquisa */
+.navbar .d-flex {
+  flex: 1; /* Faz com que o campo de pesquisa ocupe a área restante */
+  justify-content: flex-end; /* Alinha o botão de pesquisa à direita */
+}
+
+.form-control {
+  width: 220px;  /* Largura do campo de pesquisa */
+  max-width: 300px; /* Garantir que o campo de pesquisa não ultrapasse 300px */
+  padding: 5px 10px; /* Espaçamento interno */
+}
+
+.btn-outline-success {
+  margin-left: 10px; /* Adiciona um pequeno espaço entre o campo de pesquisa e o botão */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .navbar .d-flex {
+    flex: none; /* Remove o comportamento flexível */
+    justify-content: center; /* Centraliza os itens */
+  }
+
+  .form-control {
+    width: 180px;  /* Largura do campo de pesquisa em telas menores */
+    max-width: 250px; /* Largura máxima para telas pequenas */
+  }
+
+  .btn-outline-success {
+    margin-left: 0; /* Remove o espaçamento à esquerda do botão de pesquisa */
+  }
+}

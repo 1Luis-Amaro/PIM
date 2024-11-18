@@ -1,0 +1,100 @@
+
+/* Estilos gerais do footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo para a área de conteúdo do footer */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  .footer-contact, .footer-social {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para os links de telefone e email */
+  .phone-link, .email-link {
+    color: #ff9900;  /* Cor de destaque para links */
+    text-decoration: none;
+  }
+  
+  .phone-link:hover, .email-link:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+  }
+  
+ /* Estilos das redes sociais no footer */
+.footer-social {
+    text-align: center;          /* Centraliza o título e os ícones */
+    padding: 20px 0;             /* Padding para espaçamento */
+  }
+  
+  .social-links {
+    display: flex;               /* Usamos flexbox para alinhamento */
+    justify-content: center;     /* Alinha os itens ao centro */
+    list-style: none;            /* Remove o estilo padrão de lista */
+    padding: 0;                  /* Remove o padding */
+    gap: 20px;                   /* Espaçamento entre os ícones */
+  }
+  
+  .social-links li {
+    display: inline-block;       /* Garante que os itens fiquem na linha */
+  }
+  
+  .social-links a {
+    color: #333;                 /* Cor dos ícones */
+    text-decoration: none;       /* Remove o sublinhado do link */
+    transition: color 0.3s;      /* Adiciona transição suave ao passar o mouse */
+  }
+  
+  .social-links a:hover {
+    color: #007bff;              /* Cor ao passar o mouse */
+  }
+  
+  /* Adiciona uma margem entre os ícones no modo mobile */
+  @media (max-width: 768px) {
+    .social-links {
+      flex-direction: row;       /* Garante que os itens fiquem na linha (horizontalmente) */
+      justify-content: center;   /* Centraliza os ícones */
+    }
+    
+    .social-links li {
+      margin-bottom: 10px;        /* Dá um pequeno espaço entre os itens */
+    }
+  }
+  
+  
+  /* Estilo para a parte inferior do footer */
+  
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
