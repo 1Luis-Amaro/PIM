@@ -1,71 +1,90 @@
 /* Navbar fixa no topo */
 .navbar {
-  position: fixed; /* Fixa a navbar no topo da página */
-  top: 0;          /* Posiciona no topo */
-  left: 0;         /* Alinha à esquerda */
-  width: 100%;     /* Faz a navbar ocupar toda a largura */
+  position: fixed; /* Fixa a navbar no topo da página para que ela sempre fique visível ao rolar */
+  top: 0;          /* Posiciona a navbar no topo da página */
+  left: 0;         /* Alinha a navbar à esquerda */
+  width: 100%;     /* Faz a navbar ocupar toda a largura da tela */
   z-index: 999;    /* Garante que a navbar fique acima de outros elementos */
-  background-color: #343a40; /* Cor escura para a navbar */
-  padding: 10px 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
-  cursor: pointer;
+  background-color: #343a40; /* Define uma cor de fundo escura para a navbar */
+  padding: 10px 0; /* Ajusta o espaçamento superior e inferior da navbar */
+  cursor: pointer; /* Define o cursor como "pointer" para melhorar a usabilidade */
 }
 
 /* Estilo da logo dentro da Navbar */
 .navbar .logo img {
-  height: 70px;  /* Ajuste a altura conforme necessário */
-  width: auto;   /* A largura se ajustará proporcionalmente à altura */
+  height: 70px;  /* Define a altura da logo na navbar */
+  width: auto;   /* Mantém a proporção da largura da logo */
 }
 
-/* Para deixar a logo responsiva e manter o layout em dispositivos pequenos */
+/* Ajuste da logo para dispositivos menores */
 @media (max-width: 768px) {
   .navbar .logo img {
-    height: 40px;  /* Diminui o tamanho da logo em telas menores */
+    height: 60px;  /* Diminui a altura da logo em dispositivos menores para melhorar o layout */
   }
 }
 
-/* Torna o cursor uma seta ao passar sobre os links da navbar */
+/* Configuração do cursor para os links da navbar */
 .navbar-nav .nav-item .nav-link {
-  cursor: pointer;
+  cursor: pointer; /* Define o cursor como "pointer" ao passar sobre os links */
 }
 
+/* Configuração do cursor para o nome da marca (navbar-brand) */
 .navbar-brand {
-  cursor: pointer;  /* Também aplica o cursor de seta no nome da marca */
+  cursor: pointer;  /* Aplica o mesmo estilo de cursor para o nome da marca */
 }
 
-/* Ajuste para garantir que o conteúdo não sobreponha a navbar */
+/* Adiciona espaço após a navbar para evitar sobreposição com o conteúdo da página */
 .landing-page {
-  padding-top: 80px; /* Ajuste conforme a altura da sua navbar */
+  padding-top: 80px; /* Espaço no topo para acomodar a altura fixa da navbar */
 }
 
-/* Ajuste o posicionamento do formulário de pesquisa */
+/* Ajuste do posicionamento do formulário de pesquisa */
 .navbar .d-flex {
-  flex: 1; /* Faz com que o campo de pesquisa ocupe a área restante */
+  flex: 1; /* Faz o formulário ocupar a área restante da navbar */
   justify-content: flex-end; /* Alinha o botão de pesquisa à direita */
 }
 
 .form-control {
-  width: 220px;  /* Largura do campo de pesquisa */
-  max-width: 300px; /* Garantir que o campo de pesquisa não ultrapasse 300px */
-  padding: 5px 10px; /* Espaçamento interno */
+  width: 220px;  /* Define a largura padrão do campo de pesquisa */
+  max-width: 300px; /* Define uma largura máxima para o campo */
+  padding: 5px 10px; /* Adiciona espaçamento interno ao campo */
 }
 
 .btn-outline-success {
-  margin-left: 10px; /* Adiciona um pequeno espaço entre o campo de pesquisa e o botão */
+  margin-left: 10px; /* Adiciona espaço entre o campo de pesquisa e o botão */
 }
 
-/* Ajustes responsivos */
+/* Estilo responsivo para dispositivos menores */
 @media (max-width: 768px) {
   .navbar .d-flex {
-    flex: none; /* Remove o comportamento flexível */
-    justify-content: center; /* Centraliza os itens */
+    flex: content; /* Remove o comportamento flexível */
+    justify-items: center; /* Alinha os itens horizontalmente ao centro */
+    justify-content: center; /* Centraliza o conteúdo do formulário */
+    align-items: center; /* Alinha verticalmente os itens do formulário */
+  }
+
+  .nav-item {
+    display: flex; /* Garante que os itens do menu sejam exibidos em um layout flexível */
+    align-content: center; /* Centraliza os itens no eixo cruzado */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Centraliza os itens no eixo principal */
+    margin-bottom: 3px; /* Adiciona um pequeno espaço entre os itens no mobile */
   }
 
   .form-control {
-    width: 180px;  /* Largura do campo de pesquisa em telas menores */
-    max-width: 250px; /* Largura máxima para telas pequenas */
+    width: 180px;  /* Reduz a largura do campo de pesquisa no mobile */
+    max-width: 250px; /* Define uma largura máxima menor para telas pequenas */
   }
 
   .btn-outline-success {
-    margin-left: 0; /* Remove o espaçamento à esquerda do botão de pesquisa */
+    margin-left: 0; /* Remove o espaço entre o campo e o botão no mobile */
   }
+}
+
+
+.nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #007bff; /* Exemplo */
+  border-radius: 5px; /* Opcional */
 }

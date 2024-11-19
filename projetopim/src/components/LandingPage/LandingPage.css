@@ -54,11 +54,6 @@
   text-align: center;            /* Centraliza o texto na seção */
 }
 
-/* Corrigindo erro na classe (falta do seletor correto após 'sobre-section >') */
-.sobre-section > * {
-  font-weight: 900;              /* Aplica peso de fonte 900 em todos os elementos filhos da seção 'sobre' */
-}
-
 .sobre-software {
   max-width: 800px;              /* Limita a largura máxima da seção sobre-software a 800px */
   margin: 0 auto;                /* Centraliza a seção horizontalmente */

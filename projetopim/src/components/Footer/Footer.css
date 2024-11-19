@@ -64,7 +64,6 @@
 }
 
 .social-links a {
-  color: #333;                 /* Cor dos ícones das redes sociais */
   text-decoration: none;       /* Remove o sublinhado dos links */
   transition: color 0.3s;      /* Adiciona transição suave para a mudança de cor ao passar o mouse */
 }
