@@ -1,172 +1,174 @@
+/* Resetando as propriedades básicas para garantir consistência entre os navegadores */
 * {
-  color: wheat;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: wheat;                 /* Define a cor do texto como "wheat" (um tom de bege) para todo o conteúdo */
+  margin: 0;                     /* Remove a margem padrão de todos os elementos */
+  padding: 0;                    /* Remove o padding (preenchimento) padrão de todos os elementos */
+  box-sizing: border-box;        /* Define que o padding e a borda serão incluídos no cálculo do tamanho do elemento */
 }
 
-
-
-
-/* Centraliza o contêiner principal */
+/* Estilos para a página inicial (landing page) */
 .landing-page {
-  display: flex;
-  flex-direction: column; /* Mantém os elementos em uma coluna */
-  align-items: center;    /* Centraliza horizontalmente */
-  justify-content: center; /* Centraliza verticalmente */
-  min-height: 100vh;      /* Garante que o contêiner ocupe a altura total da viewport */
-  text-align: center;     /* Centraliza o texto */
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;                 /* Usamos flexbox para organizar o layout */
+  flex-direction: column;        /* Colocamos os itens em uma coluna */
+  align-items: center;           /* Centraliza os itens horizontalmente no contêiner */
+  justify-content: center;       /* Centraliza os itens verticalmente no contêiner */
+  min-height: 100vh;             /* Garante que a página ocupe no mínimo 100% da altura da tela (viewport) */
+  text-align: center;            /* Centraliza o texto dentro do contêiner */
+  padding: 20px;                 /* Adiciona um pequeno padding ao redor do contêiner */
+  box-sizing: border-box;        /* Inclui o padding e a borda no cálculo do tamanho do elemento */
 }
 
+/* Estilo para todas as seções principais */
 .primeira-section, .sobre-section, .funcionalidades-section, .db-section, .dashboard-section, .button-footer {
-  margin: 20%;
-  max-width: 800px;
-  width: 100%;
+  margin: 20%;                   /* Adiciona 20% de margem ao redor de cada seção */
+  max-width: 800px;              /* Limita a largura máxima da seção a 800px */
+  width: 100%;                   /* A largura é 100% do contêiner pai, mas não ultrapassa os 800px */
 }
 
-/* Hero Section */
+/* Estilos específicos para a primeira seção (Hero Section) */
 .primeira-section h1 {
-  font-weight: 900;
-  font-size: 60px;
-  padding-bottom: 50px;
+  font-weight: 900;              /* Define um peso de fonte mais forte para o título */
+  font-size: 60px;               /* Define o tamanho da fonte para o título */
+  padding-bottom: 50px;          /* Adiciona 50px de espaço abaixo do título */
 }
 
 .primeira-section p, .demons-button {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 30px;               /* Define o tamanho da fonte para o parágrafo e o botão */
+  font-weight: 600;              /* Define o peso da fonte para o parágrafo e o botão */
 }
 
+/* Estilo para o botão "demons-button" */
 .demons-button {
-  padding: 12px 24px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
+  padding: 12px 24px;            /* Define o espaçamento interno do botão */
+  background-color: #007bff;     /* Define a cor de fundo do botão para azul */
+  border: none;                  /* Remove a borda do botão */
+  border-radius: 4px;            /* Aplica bordas arredondadas ao botão */
+  cursor: pointer;              /* Altera o cursor para uma mãozinha quando passa sobre o botão */
+  margin-top: 20px;              /* Adiciona 20px de espaço acima do botão */
 }
 
 /* Estilos gerais para a seção "Sobre" */
 .sobre-section {
-  padding: 60px 20px;
-  background-color: #222;
-  text-align: center;
-  
+  padding: 60px 20px;            /* Adiciona padding de 60px em cima e embaixo, e 20px nas laterais */
+  background-color: #222;        /* Define um fundo escuro para a seção */
+  text-align: center;            /* Centraliza o texto na seção */
 }
-.sobre-section >  {
-  font-weight: 900;
+
+/* Corrigindo erro na classe (falta do seletor correto após 'sobre-section >') */
+.sobre-section > * {
+  font-weight: 900;              /* Aplica peso de fonte 900 em todos os elementos filhos da seção 'sobre' */
 }
 
 .sobre-software {
-  max-width: 800px;
-  margin: 0 auto;
-  
+  max-width: 800px;              /* Limita a largura máxima da seção sobre-software a 800px */
+  margin: 0 auto;                /* Centraliza a seção horizontalmente */
 }
 
+/* Estilo para o título dentro da seção "Sobre" */
 .sobre-section h2 {
-  font-size: 36px;
-  font-weight: 900;
-  margin-bottom: 20px;
-  font-weight: 900;
-  font-size: 60px;
-  
+  font-size: 36px;               /* Define o tamanho da fonte para 36px */
+  font-weight: 900;              /* Define o peso da fonte para 900 (negrito forte) */
+  margin-bottom: 20px;           /* Adiciona 20px de espaço abaixo do título */
 }
 
+/* Estilo para os parágrafos dentro da seção "Sobre" */
 .sobre-section p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 18px;               /* Define o tamanho da fonte para 18px */
+  font-weight: 400;              /* Define o peso da fonte para 400 (normal) */
+  line-height: 1.6;              /* Ajusta a altura da linha para facilitar a leitura */
+  margin-bottom: 20px;           /* Adiciona 20px de espaço abaixo dos parágrafos */
 }
 
+/* Remove o estilo de lista e ajusta os itens na seção "Sobre" */
 .sobre-section ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none;         /* Remove os pontos de lista dos itens */
+  padding: 0;                    /* Remove o padding da lista */
 }
 
+/* Estilos para os itens de lista dentro da seção "Sobre" */
 .sobre-section ul li {
-  font-size: 18px;
-  padding: 5px 0;
-  
+  font-size: 18px;               /* Define o tamanho da fonte para 18px */
+  padding: 5px 0;                /* Adiciona um espaçamento de 5px acima e abaixo de cada item */
 }
 
+/* Estilo para os títulos das outras seções */
 .funcionalidades-section h2, .sobre-software h2, .db-section h2, .dashboard-section h2, .button-footer h2 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-bottom: 30px;
+  font-size: 40px;               /* Define o tamanho da fonte para 40px */
+  font-weight: 900;              /* Define o peso da fonte para 900 */
+  margin-bottom: 30px;           /* Adiciona 30px de espaço abaixo de cada título */
 }
 
-.funcionalidades-section .todas-funcionalidades {
-  margin-bottom: 20px;
-}
-
-/* Estilos das funcionalidades */
+/* Estilo específico para a lista de funcionalidades */
 .todas-funcionalidades h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 24px;               /* Define o tamanho da fonte para os títulos de funcionalidades */
+  font-weight: 700;              /* Define o peso da fonte para 700 (negrito) */
 }
 
 .todas-funcionalidades p {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 16px;               /* Define o tamanho da fonte para 16px */
+  font-weight: 400;              /* Define o peso da fonte para 400 (normal) */
 }
 
+/* Estilos específicos para as seções de funcionalidades */
 .funcionalidades-section {
-  background-color: #333;
-  padding: 40px 0;
+  background-color: #333;        /* Define um fundo escuro para a seção de funcionalidades */
+  padding: 40px 0;               /* Adiciona padding de 40px em cima e embaixo da seção */
 }
 
+/* Estilos para a seção de banco de dados */
 .db-section {
-  background-color: #444;
-  padding: 40px 0;
+  background-color: #444;        /* Define um fundo mais claro que a seção anterior */
+  padding: 40px 0;               /* Adiciona padding de 40px em cima e embaixo da seção */
 }
 
+/* Estilos para a seção do dashboard */
 .dashboard-section {
-  background-color: #555;
-  padding: 40px 0;
+  background-color: #555;        /* Define um fundo mais claro para a seção do dashboard */
+  padding: 40px 0;               /* Adiciona padding de 40px em cima e embaixo da seção */
 }
 
+/* Estilos para a seção do botão no rodapé */
 .button-footer {
-  background-color: #7391b1;
-  padding: 40px 0;
+  background-color: #7391b1;     /* Define um fundo mais suave para a seção do botão no rodapé */
+  padding: 40px 0;               /* Adiciona padding de 40px em cima e embaixo */
 }
 
-/* Estilo dos botões */
+/* Estilos dos botões (já definidos antes, mas aqui se repete para garantir consistência) */
 .demons-button {
-  padding: 12px 24px;
-  background-color: #7391b1;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
+  padding: 12px 24px;            /* Define o espaçamento interno do botão */
+  background-color: #7391b1;     /* Define a cor de fundo do botão para azul claro */
+  border: none;                  /* Remove a borda do botão */
+  border-radius: 4px;            /* Aplica bordas arredondadas ao botão */
+  cursor: pointer;              /* Altera o cursor para uma mãozinha quando passa sobre o botão */
+  margin-top: 20px;              /* Adiciona 20px de espaço acima do botão */
 }
 
+/* Estilo para o botão do rodapé */
 .button-footer .demons-button {
-  background-color: #0fad34;
+  background-color: #0fad34;     /* Muda a cor do botão para verde */
 }
 
-/* Tornar a navbar fixa no topo */
+/* Torna a navbar fixa no topo da página */
 .navbar {
-  position: fixed; /* Fixa a navbar no topo */
-  top: 0;          /* No topo da página */
-  left: 0;         /* Alinhada à esquerda */
-  width: 100%;     /* Ocupa toda a largura da tela */
-  z-index: 999;    /* Garante que a navbar fique acima de outros elementos */
-  padding: 10px 0; /* Ajuste do espaçamento superior e inferior */
+  position: fixed;               /* Fixa a navbar no topo da página */
+  top: 0;                         /* Posiciona a navbar no topo da página */
+  left: 0;                        /* Alinha a navbar à esquerda */
+  width: 100%;                    /* Garante que a navbar ocupe toda a largura da tela */
+  z-index: 999;                   /* Garante que a navbar fique acima de outros elementos */
+  padding: 10px 0;                /* Define padding de 10px no topo e embaixo da navbar */
 }
 
-/* Adiciona um espaçamento superior no conteúdo para não sobrepor a navbar */
+/* Ajuste o conteúdo para não sobrepor a navbar */
 .landing-page {
-  padding-top: 100px; /* Ajuste conforme a altura da sua navbar */
+  padding-top: 100px;             /* Adiciona 100px de espaço no topo da página para compensar a navbar */
 }
 
-/* Seções */
+/* Seções de conteúdo */
 .primeira-section, .funcionalidades-section, .db-section, .dashboard-section, .button-footer {
-  margin-top: 20px; /* Ajuste se necessário para dar mais espaçamento entre a navbar e o conteúdo */
+  margin-top: 20px;               /* Adiciona 20px de espaço entre cada seção */
 }
 
+/* Ajusta a margem de rolagem para seções com links de ancoragem */
 #sobre, #funcionalidades {
-  scroll-margin-top: 90px; /* Ajuste conforme a altura da navbar */
+  scroll-margin-top: 150px;       /* Adiciona 150px de margem no topo para corrigir o posicionamento do conteúdo ao clicar nos links de ancoragem */
 }
-

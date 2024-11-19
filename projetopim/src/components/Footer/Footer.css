@@ -1,73 +1,80 @@
-
 /* Estilos gerais do footer */
 .footer {
-    background-color: #343a40;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  background-color: #343a40;  /* Cor de fundo escura para o footer */
+  color: white;               /* Define a cor do texto como branco para contraste */
+  padding: 40px 20px;         /* Adiciona espaçamento de 40px em cima e embaixo, e 20px nas laterais */
+  text-align: center;         /* Centraliza o texto dentro do footer */
+  font-family: Arial, sans-serif;  /* Define a fonte do footer para Arial, com fallback para sans-serif */
+}
+
+/* Estilo para a área de conteúdo do footer */
+.footer-content {
+  display: flex;              /* Usando flexbox para layout */
+  flex-direction: column;     /* Organiza os itens em uma coluna */
+  align-items: center;        /* Alinha todos os itens no centro */
+  margin-bottom: 20px;        /* Adiciona um espaçamento de 20px embaixo */
+}
+
+.footer-logo h2 {
+  height: 100px;              /* Define uma altura fixa para o logo */
+  width: 100px;               /* Define uma largura fixa para o logo */
+  display: flex;              /* Usando flexbox para o logo */
+  align-content: center;      /* Alinha o conteúdo verticalmente no centro */
+  justify-content: center;    /* Alinha o conteúdo horizontalmente no centro */
+}
+
+/* Estilo responsivo para telas pequenas (máximo 768px de largura) */
+@media (max-width: 768px) {
+  .footer-logo-img {
+      width: 80%;              /* Reduz a largura da imagem para 80% em telas pequenas */
+      max-width: 80px;         /* Define um tamanho máximo de 80px para a imagem */
   }
-  
-  /* Estilo para a área de conteúdo do footer */
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo h2 {
-    margin: 0;
-    font-size: 36px;
-    color: #ffffff;
-  }
-  
-  .footer-contact, .footer-social {
-    margin-top: 20px;
-  }
-  
-  /* Estilos para os links de telefone e email */
-  .phone-link, .email-link {
-    color: #ff9900;  /* Cor de destaque para links */
-    text-decoration: none;
-  }
-  
-  .phone-link:hover, .email-link:hover {
-    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
-  }
-  
- /* Estilos das redes sociais no footer */
+}
+
+.footer-contact, .footer-social {
+  margin-top: 20px;           /* Adiciona um espaçamento de 20px acima das seções de contato e redes sociais */
+}
+
+/* Estilos para os links de telefone e email */
+.phone-link, .email-link {
+  color: #ff9900;             /* Cor de destaque para os links de telefone e email */
+  text-decoration: none;      /* Remove o sublinhado dos links */
+}
+
+.phone-link:hover, .email-link:hover {
+  text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+/* Estilos das redes sociais no footer */
 .footer-social {
-    text-align: center;          /* Centraliza o título e os ícones */
-    padding: 20px 0;             /* Padding para espaçamento */
-  }
-  
-  .social-links {
-    display: flex;               /* Usamos flexbox para alinhamento */
-    justify-content: center;     /* Alinha os itens ao centro */
-    list-style: none;            /* Remove o estilo padrão de lista */
-    padding: 0;                  /* Remove o padding */
-    gap: 20px;                   /* Espaçamento entre os ícones */
-  }
-  
-  .social-links ul {
-    display: inline;       /* Garante que os itens fiquem na linha */
-  }
-  
-  .social-links a {
-    color: #333;                 /* Cor dos ícones */
-    text-decoration: none;       /* Remove o sublinhado do link */
-    transition: color 0.3s;      /* Adiciona transição suave ao passar o mouse */
-  }
-  
-  .social-links a:hover {
-    color: #007bff;              /* Cor ao passar o mouse */
-  }
-  
-  /* Estilo para a parte inferior do footer */
-  .footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  
+  text-align: center;          /* Centraliza o título e os ícones das redes sociais */
+  padding: 20px 0;             /* Adiciona padding de 20px acima e abaixo da seção de redes sociais */
+}
+
+.social-links {
+  display: flex;               /* Usamos flexbox para alinhar os ícones */
+  justify-content: center;     /* Alinha os itens ao centro */
+  list-style: none;            /* Remove o estilo padrão de lista */
+  padding: 0;                  /* Remove o padding padrão da lista */
+  gap: 20px;                   /* Adiciona espaçamento de 20px entre os ícones */
+}
+
+.social-links ul {
+  display: inline;             /* Garante que os itens fiquem na mesma linha */
+}
+
+.social-links a {
+  color: #333;                 /* Cor dos ícones das redes sociais */
+  text-decoration: none;       /* Remove o sublinhado dos links */
+  transition: color 0.3s;      /* Adiciona transição suave para a mudança de cor ao passar o mouse */
+}
+
+.social-links a:hover {
+  color: #007bff;              /* Muda a cor dos ícones para azul quando o mouse passa sobre eles */
+}
+
+/* Estilo para a parte inferior do footer */
+.footer-bottom p {
+  margin: 0;                   /* Remove qualquer margem extra em torno do parágrafo */
+  font-size: 14px;             /* Define o tamanho da fonte para 14px */
+}

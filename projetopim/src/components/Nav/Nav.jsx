@@ -1,10 +1,11 @@
 import React from 'react';
 import './Nav.css';  // Assumindo que o CSS esteja em um arquivo separado chamado 'Nav.css'
+import Logo from '../../../src/assets/Logo.jpg'
 
 export default function Nav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand ms-3" href="#">MinhaMarca</a>
+            <a className="navbar-brand ms-3 logo" href="#"><img src={Logo} alt="" /></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
                 <span className="navbar-toggler-icon"></span>
             </button>

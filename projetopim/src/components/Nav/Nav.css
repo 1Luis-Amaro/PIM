@@ -10,6 +10,19 @@
   cursor: pointer;
 }
 
+/* Estilo da logo dentro da Navbar */
+.navbar .logo img {
+  height: 70px;  /* Ajuste a altura conforme necessário */
+  width: auto;   /* A largura se ajustará proporcionalmente à altura */
+}
+
+/* Para deixar a logo responsiva e manter o layout em dispositivos pequenos */
+@media (max-width: 768px) {
+  .navbar .logo img {
+    height: 40px;  /* Diminui o tamanho da logo em telas menores */
+  }
+}
+
 /* Torna o cursor uma seta ao passar sobre os links da navbar */
 .navbar-nav .nav-item .nav-link {
   cursor: pointer;
